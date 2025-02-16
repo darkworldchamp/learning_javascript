@@ -3,7 +3,7 @@
 
 const score = 100;
 const scorevalue = 100.2;
-// js is a mdynamically typed language means we do not neccessarily have to define the datatype
+// js is a dynamically typed language means we do not neccessarily have to define the datatype
 // In typescript we have to define the datatype
 
 const isLoggedIn = false; // boolean
@@ -31,4 +31,27 @@ const myfunction = function () {
   console.log("hello");
 };
 
-console.log(typeof outsidetemp);
+console.log(typeof outsideTemp);
+
+// Stack and memory 
+
+// Stack memory (Primitive ) , Heap (Non-Primitive)
+
+let myname = "Nikhil"
+let  anothername= myname
+
+anothername = "sharma"
+
+console.log(anothername)
+
+let userone = {
+  email : "undefined",
+  upi: "user@ybl"
+}
+
+let usertwo = userone
+ 
+usertwo.email = "defined"
+
+console.log(userone.email)
+console.log(usertwo.email)
